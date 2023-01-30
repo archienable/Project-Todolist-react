@@ -1,51 +1,24 @@
 import React, {useState} from "react";
+import InputGroup from "./components/InputGroup/InputGroup";
+import MyPosts from "./components/MyPosts";
 
 function App() {
 
-        const [posts, setPosts] = useState([])
+    const [posts, setPosts] = useState(JSON.parse(localStorage.getItem('fff')) || [])
 
-        const [text, setText] = useState('')
-
-        const addCase = (e) => {
-            e.preventDefault()
-            const newTodo = {id: Date.now(), title: text}
-            setPosts([...posts, newTodo])
-            setText('')
-        }
-
-    const deleteBtn = (id) => {
-        console.log(id)
-        // console.log(posts)
-        setPosts(posts.filter(item => item.id !== id))
-
+    const addCase = (text) => {
+        const newPosts = [...posts, { id: Date.now(), title: text, done: false }]
+        setPosts(newPosts)
+        localStorage.setItem('fff', JSON.stringify(newPosts))
     }
 
-  return (
-    <div className="App">
-        <h2>todoList</h2>
-        <div>
-            <input
-                value={text}
-                onChange={e => setText(e.target.value)}
-                type='text'
-                placeholder='введите текст'/>
-            <button disabled={!text} onClick={addCase}>добавить дело</button>
+    return (
+        <div className="App">
+            <h2>todoList</h2>
+            <InputGroup addCase={addCase}/>
+            <MyPosts posts={posts} setPosts={setPosts}/>
         </div>
-        {posts.map((post) => {
-            return (
-                <div className='post'>
-                    <div className='postContent'>
-                        <strong>{post.title}</strong>
-                    </div>
-                    <div className='postBtn'>
-                        <button onClick={() => deleteBtn(post.id)} key={post.id}>delete</button>
-                    </div>
-                </div>
-                )
-            }
-        )}
-    </div>
-  );
+    );
 }
 
 export default App;
