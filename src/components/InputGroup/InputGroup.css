@@ -1,0 +1,16 @@
+.InputGroup {
+    display: flex;
+}
+
+.addInput {
+    border: 2px solid grey;
+    border-radius: 5px;
+    height: 30px;
+    width: 350px;
+}
+
+@media (max-width: 414px) {
+    .addInput {
+        width: 190px;
+    }
+}

@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fcff7a60-d84b-445b-be13-b1da5fd36b90" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Button/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Input/Input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/InputGroup/InputGroup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MyPosts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PostItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PostItem.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/InputGroup/InputGroup.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Input/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Input/Input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/InputGroup/InputGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InputGroup/InputGroup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyPosts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyPosts/MyPosts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PostItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostItem/PostItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PostItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostItem/PostItem.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +59,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/MyPosts" />
+      <recent name="$PROJECT_DIR$/src/components/PostItem" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/components/InputGroup/InputBtn" />
       <recent name="$PROJECT_DIR$/src/components/InputGroup" />
@@ -83,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674740041281</updated>
-      <workItem from="1674740042732" duration="48066000" />
+      <workItem from="1674740042732" duration="98784000" />
     </task>
     <servers />
   </component>

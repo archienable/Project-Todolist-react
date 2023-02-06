@@ -1,12 +1,13 @@
 import React from 'react';
+import Button from '@mui/material/Button';
 
-const Button = ({disabled, onClick, children, className, posts}) => {
+const DefButton = ({disabled, onClick, children, className, color = 'success'}) => {
 
     return (
         <div>
-            <button className={className} disabled={disabled} onClick={onClick}>{children}</button>
+            <Button variant={"contained"} color={color} className={className} disabled={disabled} onClick={onClick}>{children}</Button>
         </div>
     );
 };
 
-export default Button;
+export default DefButton;

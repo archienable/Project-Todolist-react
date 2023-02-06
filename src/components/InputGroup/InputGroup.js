@@ -1,20 +1,20 @@
 import React, {useState} from 'react';
 import Input from "../Input/Input";
-import Button from "../Button";
+import DefButton from "../Button";
+import './InputGroup.css'
 
 const InputGroup = ({addCase}) => {
     const [text, setText] = useState('')
 
     return (
-        <div>
-            <Input text={text} setText={setText}/>
-            <Button className='addCaseBtn' disabled={!text} onClick={(e) => {
+        <div className='InputGroup'>
+            <Input className='addInput' text={text} setText={setText} placeholder='введите текст' />
+            <DefButton color={'secondary'} className='addCaseBtn' disabled={!text} onClick={(e) => {
                 e.preventDefault()
                 addCase(text)
                 setText('')
             }
-
-            }>добавить дело</Button>
+            }>добавить дело</DefButton>
         </div>
     );
 };

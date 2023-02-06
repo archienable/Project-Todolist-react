@@ -1,0 +1,29 @@
+.postSuccess {
+    background-color: white;
+}
+
+.post {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    border: 2px solid #004A43;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    align-items: center;
+}
+
+.postBtn {
+    display: flex;
+}
+
+.postContent {
+    color: #004A43;
+}
+
+@media (max-width: 530px) {
+    .post {
+        width: 100%;
+        max-width: 500px;
+    }
+}

@@ -1,11 +1,9 @@
 import React from 'react';
-import Button from "./Button";
+import DefButton from "../Button";
 import style from "./PostItem.module.css"
 
 const PostItem = ({post, setPosts, posts}) => {
 
-    let keyName = 'fff'
-    
     const doneBtn = (id) => {
         const newPosts = posts.map(value => {
             if (value.id === id) {
@@ -14,16 +12,14 @@ const PostItem = ({post, setPosts, posts}) => {
             return value
         })
         setPosts(newPosts)
-        localStorage.setItem(keyName, JSON.stringify(newPosts))
     }
 
     const deleteBtn = (id) => {
         const newPosts = posts.filter(item => item.id !== id)
         setPosts(newPosts)
-        localStorage.setItem(keyName, JSON.stringify(newPosts))
     }
 
-    let postClass = 'post '
+    let postClass = `${style.post} `
 
     if (post.done) {
         postClass += style.postSuccess
@@ -32,12 +28,12 @@ const PostItem = ({post, setPosts, posts}) => {
     return (
         // <div className={`post ${post.done ? style.postSuccess : ''}`}>
         <div className={postClass}>
-            <div className='postContent'>
+            <div className={style.postContent}>
                 <strong>{post.title}</strong>
             </div>
-            <div className='postBtn'>
-                <Button onClick={() => deleteBtn(post.id)}>delete</Button>
-                <Button className={style.doneBtn} onClick={() => doneBtn(post.id)}>done</Button>
+            <div className={style.postBtn}>
+                <DefButton className={style.doneBtn} onClick={() => doneBtn(post.id)}>done</DefButton>
+                <DefButton color={'error'} onClick={() => deleteBtn(post.id)}>delete</DefButton>
             </div>
         </div>
     );

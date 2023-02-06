@@ -1,13 +1,16 @@
 import React from 'react';
 
-const Input = ({text, setText}) => {
+const Input = ({text, setText, placeholder, className}) => {
+
     return (
         <div>
             <input
                 value={text}
+                className={className}
                 onChange={e => setText(e.target.value)}
                 type='text'
-                placeholder='введите текст'/>
+                placeholder={placeholder}
+            />
         </div>
     );
 };
